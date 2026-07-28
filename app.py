@@ -289,3 +289,55 @@ if st.button("Predict Churn"):
 
     st.subheader("Input Summary")
     st.dataframe(input_df)
+
+    # -----------------------------
+# Project Visualizations
+# -----------------------------
+st.markdown("---")
+st.header("📊 Project Visualizations")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.image(
+        "Images/Churn_Count.png",
+        caption="Customer Churn Distribution",
+        use_container_width=True
+    )
+
+    st.image(
+        "Images/contract_vs_churn.png",
+        caption="Contract Type vs Churn",
+        use_container_width=True
+    )
+
+    st.image(
+        "Images/payment_method_vs_churn.png",
+        caption="Payment Method vs Churn",
+        use_container_width=True
+    )
+
+    st.image(
+        "Images/confusion_matrix.png",
+        caption="Confusion Matrix",
+        use_container_width=True
+    )
+
+with col2:
+    st.image(
+        "Images/tenure_distribution.png",
+        caption="Tenure Distribution",
+        use_container_width=True
+    )
+
+    st.image(
+        "Images/internet_service_vs_churn.png",
+        caption="Internet Service vs Churn",
+        use_container_width=True
+    )
+
+    st.image(
+        "Images/correlation_heatmap.png",
+        caption="Correlation Heatmap",
+        use_container_width=True
+    )
